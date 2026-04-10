@@ -1,0 +1,141 @@
+.widget-risposte .risposta__title,.widget-risposte .widget-risposte__label{font:500 18px/24px 'Eugenio Sans Text','Helvetica Neue',Helvetica,sans-serif}
+.widget-box__link,.widget-esperti-ricerca form{text-align:center}
+#adv-osservatori h3,.widget-box{font-family:inherit;position:relative}
+.widget-esperti-list figure svg{width:100%;height:30px;fill:#ff7d7d}
+.widget-esperti-list ul{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}
+.widget-risposte{padding:10px 16px 16px;margin-bottom:30px;position:relative;border-top:2px solid #000}
+.widget-risposte:before{content:'';width:14px;height:2px;background-color:#ff7d7d;position:absolute;top:-2px;left:0;z-index:10;border-right:2px solid #fff}
+.widget-risposte .widget-risposte__label{color:#ff7d7d;display:block}
+.widget-risposte .risposta{display:-webkit-box;display:-ms-flexbox;display:flex;padding:16px 0;border-bottom:1px solid #dedede}
+.widget-risposte .risposta .risposta__content{-webkit-box-flex:1;-ms-flex:1;flex:1}
+.widget-risposte .risposta__title a:hover{color:#ff7d7d}
+.widget-risposte .widget-risposte__link{position:absolute;top:10px;right:10px;display:block;background:#454545;font-size:11px;color:#fff;padding:6px 16px;text-transform:uppercase}
+#tuttiEsperti.is-closed .widget-box__item:nth-of-type(n+2),#tuttiEsperti.is-closed .widget-box__link,.esperto-header[hidden]{display:none}
+.widget-box *{margin:0;padding:0;list-style-type:none;text-decoration:none;border:none}
+.widget-box{padding:0 16px 16px;margin:0 0 16px;background:#fdfdfd;border-top:1px solid #333;overflow:hidden}
+.widget-box__label{display:block;width:100%;position:relative;font-size:13px;line-height:13px;font-weight:500;color:#454545;margin:0 0 8px;padding:16px 0;text-transform:uppercase}
+.widget-box__item a:hover{text-decoration:underline}
+.widget-box__label a{color:#000}
+.widget-box__overtitle{display:block;text-transform:uppercase}
+.widget-box__item:first-of-type{border-top:none;margin-top:0;padding-top:0}
+.widget-box__title,li.widget-box__item{font-size:16px;line-height:20px;color:#1a1a1a;margin-bottom:2px}
+.widget-box__title a,li.widget-box__item a{color:#1a1a1a}
+li.widget-box__item a{font-weight:500}
+.widget-box time{display:block;font-size:13px;line-height:18px;color:#666;margin-bottom:4px}
+.widget-box__author{display:block;color:#000}
+#tuttiEspertiTrigger,.widget-box__link{font-size:11px;color:#fff;text-transform:uppercase;background:#454545;padding:6px 16px}
+.widget-box article:not(.big-img) .widget-box__figure{float:left;margin-right:16px}
+.widget-box .big-img img{display:block;width:100%;margin-bottom:8px}
+.widget-box .big-img .widget-box__title,.widget-box__article .widget-box__title{font-size:20px;line-height:24px;font-style:italic}
+.widget-box p{margin:6px 0 0;font-size:15px;line-height:21px}
+.widget-box__content{display:table-cell}
+.widget-box__content p{font-size:14px;line-height:17px}
+.widget-box__link{margin:16px 0 auto auto;display:block}
+.aside-stories:before,.widget-esperto-question{background-color:#ff7d7d}
+.widget-box__overtitle{font:500 12px/18px 'Eugenio Sans Text','Helvetica Neue',Helvetica,sans-serif;color:#4b88ca}
+.widget-box__title{font-weight:500}
+.widget-box__figure svg{width:60px;height:60px;fill:#ff7d7d}
+.esperto-header-left svg,.widget-box.tutti-esperti figure svg{width:40px;height:40px;fill:#ff7d7d}
+.widget-box a:hover{text-decoration:none;color:#4b88ca}
+.widget-box__author{font:italic 500 14px/1.2 Georgia,Times,'Times New Roman',serif;margin-top:5px}
+.widget-box__author a{text-decoration:underline}
+.widget-box__item{overflow:hidden;border-top:1px solid #d4d4d4;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;margin-top:8px;padding-top:8px}
+.widget-box__content{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+.widget-box.tutti-esperti .link{font-weight:500;font-size:14px;line-height:17px}
+#tuttiEsperti{margin-bottom:0}
+#tuttiEsperti .widget-box__author{font:italic 500 14px/1 Georgia,Times,'Times New Roman',serif!important;color:#0d0d0d}
+#tuttiEsperti .widget-box__risposte{font-weight:500;font-size:13px;line-height:16px}
+#tuttiEspertiTrigger{margin-top:0;margin-bottom:16px;width:100%;display:block}
+.esperto-header{border-top:1px solid #999;padding:10px}
+.esperto-header__question{display:block;font-weight:500;color:#ff7d7d}
+.esperto-header__question:hover{color:#000}
+.esperto-header-left{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:26px;text-transform:uppercase}
+.esperto-header-left figure{-webkit-box-flex:0;-ms-flex:0 0 54px;flex:0 0 54px}
+.esperto-header-right{font-size:13px;line-height:1.2}
+.widget-esperto-question{position:relative;height:150px;color:#fff;padding:16px;margin-bottom:16px}
+.widget-esperto-question svg{position:absolute;right:0;bottom:0}
+.widget-esperto-question a:hover{color:#fff!important;text-decoration:underline}
+.widget-esperto-question__label{display:block;font-size:20px;line-height:1.2;font-weight:500;text-transform:uppercase;margin-bottom:8px}
+.widget-esperto-question__cta{display:block;font-size:16px;margin-bottom:16px}
+.widget-esperto-question__link{font-size:12px}
+.widget-esperti-list li{font-size:13px;font-weight:400;-ms-flex-preferred-size:50%;flex-basis:50%;min-height:50px}
+.widget-esperti-list a{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.widget-esperti-list a:hover{color:#4b88ca}
+.widget-esperti-list a:hover figure svg{fill:#000}
+.widget-esperti-list figure{-webkit-box-flex:0;-ms-flex:0 0 50px;flex:0 0 50px;text-align:center}
+.widget-esperti-list__label,.widget-esperti-ricerca .widget-esperti-ricerca__label{font-size:16px;line-height:24px;margin:0 0 15px;font-weight:500;color:#454545;text-transform:uppercase}
+.widget-esperti-ricerca .form-row{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;margin-bottom:10px}
+.widget-esperti-ricerca .form-row input,.widget-esperti-ricerca .form-row select{-ms-flex-preferred-size:49%;flex-basis:49%}
+.widget-esperti-ricerca label{font-size:14px}
+.widget-esperti-ricerca input{width:100%;height:30px;display:block;border:1px solid #ddd}
+.widget-esperti-ricerca select{height:30px}
+.widget-esperti-ricerca button{background:#454545;color:#fff;font-size:11px;padding:6px 16px;margin-bottom:10px}
+#adv-osservatori h3,.financial-lounge h1{color:#222;font-size:13px;line-height:13px;text-transform:uppercase;font-weight:500}
+.gd-column-8 .widget-esperti__list ul li{-ms-flex-preferred-size:25%;flex-basis:25%}
+.from-financial-lounge__partner{text-align:right;font-size:14px}
+.from-financial-lounge__partner img{vertical-align:middle;margin-left:5px;width:auto}
+.bn-breaking-news{margin-top:-16px!important;margin-bottom:16px!important}
+.threeBoxes-widget .ico{display:none}
+.threeBoxes-widget .section-title{font-size:16px!important}
+.financial-lounge a:hover{color:#ff7d7d}
+.financial-lounge h1{padding:14px 0 16px}
+.financial-lounge h1:hover{cursor:pointer;border-color:#ff6363;color:#ff6363}
+.aside-stories__label,.block__inner-overtitle,.rep-page-header__brand-logo a:hover,.widget-risposte__label{color:#ff7d7d}
+.financial-lounge article{font-size:16px;line-height:20px;color:#1a1a1a}
+.financial-lounge img{width:auto;vertical-align:middle}
+.financial-lounge ul{margin-bottom:16px}
+.financial-lounge li{display:-webkit-box;display:-ms-flexbox;display:flex;border-bottom:1px solid var(--border-color);margin-bottom:16px;padding-bottom:16px}
+.financial-lounge li>img{width:100px;height:66px;margin-right:16px;vertical-align:middle}
+.financial-lounge .collab{text-align:right}
+#adv-osservatori{background:#fff;display:none;border-top:1px solid #ebebeb;position:relative}
+#adv-osservatori h3{padding:14px 0 16px 16px;display:block;text-align:left;margin:0;z-index:10}
+[class*=block__layout-R] .block__inner-overtitle{display:block;font-size:26px;line-height:30px;text-align:center;font-family:'Eugenio Serif','Eugenio Serif Fallback';font-weight:500;margin:0 auto 16px;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;border-bottom:4px solid var(--block-color)}
+[class*=block__layout-R] .entry.side-media .entry__overtitle,[class*=block__layout-R] .entry.side-media .entry__title{display:inline;font-size:20px;line-height:24px}
+[class*=block__layout-R] .block__item:first-child .entry:first-child .entry__content{text-align:center}
+[class*=block__layout-R] .block__item:first-child .entry:first-child .entry__overtitle{font-family:'Eugenio Sans Text','Helvetica Neue',Helvetica,sans-serif;text-transform:uppercase;font-size:16px;line-height:20px}
+[class*=block__layout-R] #adv-BoxP{min-height:250px}
+.block.is-hard-news,.block__layout-newsletters,.block__layout-opinions{--block-color:#ff7d7d}
+.entry__summary em,.entry__title em{background-color:rgba(255,125,125,.15)}
+main a:hover{color:#ff7d7d!important}
+gdwc-recommendations{--gdwc-recommendations-title-article-hover:#ff7d7d}
+.block__button{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;margin-bottom:32px;text-transform:uppercase;font-size:12px;font-weight:500}
+.block__button a{background:#ff7d7d;color:#fff;padding:8px 16px}
+.block__button a:hover{background:#000;color:#fff!important}
+.block__layout-B-12.idealista .block__overtitle{display:grid;grid-template-columns:200px 100px;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;-webkit-box-align:center;-ms-flex-align:center;align-items:center;width:auto;border-bottom:initial;font-family:'Eugenio Sans Text','Helvetica Neue',Helvetica,sans-serif;font-size:18px}
+.block__layout-B-12.idealista .block__overtitle img{aspect-ratio:25/9;width:100%}
+@media screen and (min-width:768px){
+.esperto-header{display:-webkit-box;display:-ms-flexbox;display:flex;height:75px}
+.esperto-header-left{-webkit-box-flex:1;-ms-flex:1;flex:1}
+.esperto-header-right{-webkit-box-flex:1;-ms-flex:1;flex:1;text-align:right}
+[class*=block__layout-R] .block__overtitle{margin-left:0}
+[class*=block__layout-R] .block__inner-overtitle{margin-left:0;margin-bottom:16px;margin-top:-50px}
+[class*=block__layout-R] .entry.side-media .entry__content{-ms-flex-item-align:start;align-self:flex-start}
+[class*=block__layout-R] .entry.side-media .entry__media{-ms-flex-preferred-size:40%;flex-basis:40%}
+[class*=block__layout-R] .entry:not(:last-child){border-bottom:1px var(--border-color) solid;padding-bottom:var(--column-gap);margin-bottom:var(--column-gap)}
+[class*=block__layout-R] .block__item:first-child:not(:last-child){position:relative}
+[class*=block__layout-R] .block__item:first-child:not(:last-child)::after{content:"";border-right:1px solid var(--border-color,#e9e9e9);position:absolute;right:0;bottom:24px;top:0}
+[class*=block__layout-R] .block__item:first-child .entry:first-child .entry__title{font-size:32px;line-height:38px}
+[class*=block__layout-R] .block__item{-ms-flex-preferred-size:50%;flex-basis:50%}
+.rep-page-header-nav__list>li:not([data-menu=rapporti-e-focus]) .rep-page-header-nav__sublist-row{display:grid;grid-template-rows:25px 1fr;grid-auto-columns:1fr;grid-template-columns:1fr}
+.rep-page-header-nav__sublist-column:first-child{grid-row:1}
+.rep-page-header-nav__sublist-column:nth-child(2){grid-row:2}
+.rep-page-header-nav__sublist-column:nth-child(n+3){grid-row:1/3}
+}
+@media screen and (min-width:768px) and (max-width:1539px){
+.widget-esperto-question__label{font-size:15px}
+}
+@media screen and (min-width:1540px){
+.widget-risposte .risposta__title{font-size:21px;line-height:26px}
+}
+@media screen and (max-width:767px){
+.esperto-header{height:115px}
+.esperto-header-left{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+.esperto-header-right{text-align:center;margin-top:10px}
+.widget-esperto-question__label{font-size:18px}
+[class*=block__layout-R] .entry.side-media{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-flow:row wrap;flex-flow:row wrap}
+[class*=block__layout-R] .entry.side-media .entry__media{-webkit-box-ordinal-group:3;-ms-flex-order:2;order:2;-webkit-box-flex:0;-ms-flex:0 0 37.5%;flex:0 0 37.5%}
+[class*=block__layout-R] .block__item:first-child .entry:first-child .entry__title{font-size:26px;line-height:30px}
+}
+@media (max-width:480px){
+.widget-box{margin:16px 4px}
+}

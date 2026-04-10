@@ -1,0 +1,132 @@
+(function(){
+	
+	    var newsletterGediIFrame = {settings: {}}
+
+          //--------------------------------------------------------------------------
+		  newsletterGediIFrame.showCondition  = function(ifid) {
+			  alert ("showCondition");
+			  if (document.getElementById("nlmail").value.length > 0) {
+						 document.getElementById("risultati").innerHTML = "";
+						 document.getElementById("widget-newsletter_terms").style.display = 'block';
+						 $( "#newsatme_p1_c1" ).prop( "checked", false );
+						 $( "#newsatme_p2_c1" ).prop( "checked", false );
+						 $( "#newsatme_p2_c2" ).prop( "checked", false );
+						 $( "#newsatme_p2_c3" ).prop( "checked", false );
+			  }
+			  else {
+						 document.getElementById("widget-newsletter_terms").style.display = 'none';
+						 document.getElementById("risultati").innerHTML = "";
+			  }
+			  parent.postMessage(JSON.stringify({'idiframe':ifid, 'size':document.body.offsetHeight}), '*');
+		  }
+
+          //--------------------------------------------------------------------------
+          newsletterGediIFrame.checkParam  = function(ifid) {
+			  console.log( "[checkParam] start mail.length:" + $('#nlmail').val().trim().length );
+			  if ($('#nlmail').val().trim().length==0)  {
+				  //document.getElementById("widget-newsletter_terms").style.display = 'block';
+				  parent.postMessage(JSON.stringify({'idiframe':ifid, 'size':document.body.offsetHeight}), '*');
+				  alert ("Inserito indirizzo mail non valido");
+				  return false;
+			  }
+			  /*if ($('input[name=privacy1]:checked').val() != 'Y' and false)  {
+				  document.getElementById("widget-newsletter_terms").style.display = 'block';
+				  parent.postMessage(JSON.stringify({'idiframe':ifid, 'size':document.body.offsetHeight}), '*');
+				  alert ("Per continuare bisogna dare l'assenso alle condizioni generali di contratto");
+				  return false;
+			  }*/
+			  if ($('input[name=acceptnews]:checked').val() == 'undefined' || $('input[name=acceptnews]:checked').val() == null)  {
+				  document.getElementById("widget-newsletter_terms").style.display = 'block';
+				  parent.postMessage(JSON.stringify({'idiframe':ifid, 'size':document.body.offsetHeight}), '*');
+				  alert ("Completa le informazioni sul trattamento dati");
+				  return false;
+			  }
+			  if ($('input[name=acceptnewsterzeparti]:checked').val() == 'undefined' || $('input[name=acceptnewsterzeparti]:checked').val() == null)  {
+				  document.getElementById("widget-newsletter_terms").style.display = 'block';
+				  parent.postMessage(JSON.stringify({'idiframe':ifid, 'size':document.body.offsetHeight}), '*');
+				  alert ("Completa le informazioni sul trattamento dati");
+				  return false;
+			  }
+			  if ($('input[name=acceptnewstracking]:checked').val() == 'undefined' || $('input[name=acceptnewstracking]:checked').val() == null)  {
+				  document.getElementById("widget-newsletter_terms").style.display = 'block';
+				  parent.postMessage(JSON.stringify({'idiframe':ifid, 'size':document.body.offsetHeight}), '*');
+				  alert ("Completa le informazioni sul trattamento dati");
+				  return false;
+			  }
+
+			  //alert ($('#nlmail').val());
+			  //Richiesta($('#nlmail').val(), $('#newsatme_p1_c1').is(':checked'), $('#newsatme_p2_c1').is(':checked'), $('#newsatme_p2_c2').is(':checked'), $('#newsatme_p2_c3').is(':checked'));
+			  //return true;
+		  }
+
+		  
+          //--------------------------------------------------------------------------
+
+          
+		 //--- definisco l'oggetto da usare nelle pagine
+		 window.newsletterGediIFrame = newsletterGediIFrame;
+})();
+
+
+var XMLHTTP;
+
+newsletterGediIFrame.Richiesta = function(Stringa, par1, par2, par3, par4)
+{
+	// funzione utilizzata per soluzione con comunicazione soap
+	//alert ("Richiesta on");
+    if (Stringa.length > 0)
+    {
+        var url = "inviamail.php?email=" + Stringa.toLowerCase() + "&par1=" + par1 + "&par2=" + par2 + "&par3=" + par3 + "&par4=" + par4;
+        XMLHTTP = RicavaBrowser(CambioStato);
+        XMLHTTP.open("GET", url, true);
+        XMLHTTP.send(null);
+    }
+    else
+    {
+        document.getElementById("risultati").innerHTML = "";
+    } 
+}
+
+newsletterGediIFrame.CambioStato = function ()
+{
+	// funzione utilizzata per soluzione con comunicazione soap
+    if (XMLHTTP.readyState == 4)
+    {
+        var R = document.getElementById("risultati");
+        R.innerHTML = XMLHTTP.responseText;
+    }
+}
+
+newsletterGediIFrame.RicavaBrowser = function(QualeBrowser)
+{
+	// funzione utilizzata per soluzione con comunicazione soap
+    if (navigator.userAgent.indexOf("MSIE") != (-1))
+    {
+        var Classe = "Msxml2.XMLHTTP";
+        if (navigator.appVersion.indexOf("MSIE 5.5") != (-1));
+        {
+            Classe = "Microsoft.XMLHTTP";
+        } 
+        try
+        {
+            OggettoXMLHTTP = new ActiveXObject(Classe);
+            OggettoXMLHTTP.onreadystatechange = QualeBrowser;
+            return OggettoXMLHTTP;
+        }
+        catch(e)
+        {
+            alert("Errore: l'ActiveX non verrà eseguito!");
+        }
+    }
+    else if (navigator.userAgent.indexOf("Mozilla") != (-1))
+    {
+        OggettoXMLHTTP = new XMLHttpRequest();
+        OggettoXMLHTTP.onload = QualeBrowser;
+        OggettoXMLHTTP.onerror = QualeBrowser;
+        return OggettoXMLHTTP;
+    }
+    else
+    {
+        alert("L'esempio non funziona con altri browser!");
+    }
+}

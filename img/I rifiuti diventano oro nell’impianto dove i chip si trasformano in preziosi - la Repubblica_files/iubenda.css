@@ -1,0 +1,50 @@
+#iubenda-cs-banner,#iubenda-cs-banner:before{position:fixed;top:0;right:0;left:0;bottom:0}
+.iubenda-claim,.iubenda-cs-header,.iubenda-cs-opt-group-consent,html.is-iubenda-cs-banner-open #iubenda-cs-banner{display:-webkit-box;display:-ms-flexbox;display:flex}
+:root{--cookiewall-primary-color:#333}
+.site-repubblica{--cookiewall-primary-color:#4B88CA}
+.site-lastampa{--cookiewall-primary-color:#073860}
+.site-huffingtonpost{--cookiewall-primary-color:#2e7061}
+.site-corrierealpi,.site-gazzettadimantova,.site-ilpiccolo,.site-ilsecoloxix,.site-laprovinciapavese,.site-lasentinella,.site-mattinopadova,.site-messaggeroveneto,.site-nuovavenezia,.site-tribunatreviso{--cookiewall-primary-color:#1a3b70}
+#iubenda-cs-banner{display:none;z-index:100000000;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+#iubenda-cs-banner:before{content:"";background-color:rgba(0,0,0,.7)}
+#iubenda-cs-banner p{margin:0 0 16px}
+#iubenda-cs-banner strong{font-weight:700}
+#iubenda-cs-banner summary{list-style:none}
+#iubenda-cs-banner summary::-webkit-details-marker,#iubenda-cs-banner summary::marker{display:none}
+#iubenda-cs-banner button:focus{outline:0}
+#iubenda-cs-banner button:hover{cursor:pointer}
+#iubenda-cs-banner a:not(.cookiewall__button){color:var(--cookiewall-primary-color);text-decoration:underline}
+#iubenda-cs-banner a:not(.cookiewall__button):hover{color:inherit}
+.iubenda-cs-container{position:relative;font:16px/22px 'Helvetica Neue',Helvetica,Arial,sans-serif;color:#333}
+.iubenda-custom-content img{max-width:240px;height:41px}
+.iubenda-advertising-preferences-link,.iubenda-vendor-list-link{overflow:visible;border:0;font:inherit;-webkit-font-smoothing:inherit;letter-spacing:inherit;background:0 0;cursor:pointer;margin:0;padding:0;color:inherit}
+.iubenda-cs-btn-primary{background:var(--cookiewall-primary-color);border-radius:100px;border:1px var(--cookiewall-primary-color) solid;text-transform:uppercase;color:#fff;text-decoration:none;text-align:center;font-size:14px}
+.iubenda-cs-btn-primary:hover{background:#fff;color:var(--cookiewall-primary-color)}
+.iubenda-cs-opt-group{margin:24px 0}
+.iubenda-cs-opt-group-consent .iubenda-cs-btn-primary{letter-spacing:1px}
+.iubenda-cs-login{text-align:center;font-size:16px;border-top:1px solid #bcbcbc;padding:16px}
+.iubenda-cs-login a{color:var(--cookiewall-primary-color);padding:4px 12px;margin-left:8px;border:1px solid var(--cookiewall-primary-color);border-radius:24px;text-decoration:none!important;font-size:14px;letter-spacing:1px}
+.iubenda-cs-footer{font-size:13px;line-height:1.4;padding:0 16px}
+.iubenda-cs-header{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
+.iubenda-cs-header .iubenda-claim{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;white-space:nowrap;font-size:11px}
+.iubenda-cs-header .iubenda-claim .iubenda-logo{width:70px;height:auto}
+.iubenda-claim{-webkit-box-align:center;-ms-flex-align:center;align-items:center;white-space:nowrap;font-size:11px;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}
+@media screen and (min-width:768px){
+#iubenda-cs-banner{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+.iubenda-cs-container{max-width:800px;margin:0 16px;background-color:#fff;padding:24px;border-radius:16px}
+.iubenda-cs-btn-primary{padding:12px 32px}
+.iubenda-cs-opt-group-consent{-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}
+.iubenda-cs-footer{margin-left:-24px;margin-right:-24px}
+.iubenda-cs-header{margin-bottom:32px}
+.iubenda-cs-header .iubenda-claim{gap:8px}
+}
+@media screen and (max-width:767px){
+#iubenda-cs-banner{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}
+.iubenda-cs-container{padding:32px 16px 16px;background:#f5f5f5;max-height:75%;overflow-y:auto}
+.iubenda-cs-btn-primary{display:block;padding:12px 0}
+.iubenda-cs-opt-group-consent{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-ms-flex-direction:column-reverse;flex-direction:column-reverse}
+.iubenda-cs-opt-group-consent .iubenda-cs-btn-primary{margin:8px 0}
+.iubenda-cs-footer{margin-left:-16px;margin-right:-16px}
+.iubenda-cs-header{margin-bottom:16px}
+.iubenda-cs-header .iubenda-claim{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+}

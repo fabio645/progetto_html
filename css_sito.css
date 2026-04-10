@@ -18,8 +18,6 @@ body {
 /*
 
    Creo una griglia con:
-
-   - 2 colonne: sidebar (160px) + contenuto (1fr)
    - 4 righe: header, nav, contenuto, footer
 
 */
@@ -51,11 +49,11 @@ body {
 
    header {
     grid-area: header;
-    height: 100px;
+    height: 250px;
 
 
     /* immagine di sfondo */
-    background-image: url("images.jpg");
+    background-image: url("sfondo.jpg");
     background-size: cover;       /* riempie tutto */
     background-position: center;  /* centrata */
     background-repeat: no-repeat;
@@ -76,22 +74,23 @@ header h1 {
 nav {
 
     grid-area: nav;
-    height: 50px;
+    height: 35px;
 
     text-align: center;
-    margin-bottom: 2px;
+    background-color: #777;
 
 }
 
 #link {
-
-    width: 80%;
+    height: 100%;
     margin: auto;
+    width: 80%;
     background-color: #afafaf;
     border-top: 2px solid black;
 }
 /* menu orizzontale */
 #link ul {
+    height: 100%;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -100,6 +99,7 @@ nav {
 
 #link li {
 
+    height: 100%;
     flex: 1; /* tutti uguali */
     border-left: 2px solid black;
     border-bottom: 2px solid black;
@@ -115,7 +115,9 @@ nav {
     width: 100%;
     height: 100%;
 
-    display: block;
+    align-items: center;
+    justify-content: center;
+    display: flex;
     text-decoration: none;
 
     color: black;
@@ -124,7 +126,7 @@ nav {
 /* hover effetto */
 
 #link li a:hover {
-
+    height: 37px;
     background-color: aliceblue;
 }
 
@@ -146,7 +148,7 @@ aside {
 
     height: 100vh;
     overflow-y: auto;
-    background-color: rgba(29, 240, 21, 0.432);
+    background-color: rgb(134, 134, 134);
 
 
 }
@@ -164,8 +166,14 @@ main {
     margin-right: 0;
     margin-left: auto;
     margin-top: 0;
-    background-color: aquamarine;
+    background-color: rgb(255, 255, 255);
 }
+h2{
+   
+    font-size: 55px;
+    margin-left: 20px;
+}
+
 
 footer {
 
