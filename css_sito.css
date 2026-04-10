@@ -1,0 +1,186 @@
+/* =========================================================
+   RESET BASE
+   ========================================================= */
+   * {
+
+    box-sizing: border-box; /* include padding e border nelle dimensioni */
+
+}
+
+body {
+
+    margin: 0;
+   font-family: sans-serif;
+
+}
+
+
+/*
+
+   Creo una griglia con:
+
+   - 2 colonne: sidebar (160px) + contenuto (1fr)
+   - 4 righe: header, nav, contenuto, footer
+
+*/
+
+body {
+
+
+    margin: 0;
+    font-family: sans-serif;
+
+    display: grid;
+    /* righe automatiche */
+   grid-template-rows: auto auto 1fr auto;
+
+    grid-template-areas:
+
+
+
+
+        "header"
+
+        "nav"
+
+        "content"    
+
+        "footer";
+
+}
+
+   header {
+    grid-area: header;
+    height: 100px;
+
+
+    /* immagine di sfondo */
+    background-image: url("images.jpg");
+    background-size: cover;       /* riempie tutto */
+    background-position: center;  /* centrata */
+    background-repeat: no-repeat;
+
+
+    /* centratura testo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* testo sopra */
+header h1 {
+    margin: 0;
+    color: white; /* importante per visibilità */
+}
+
+nav {
+
+    grid-area: nav;
+    height: 50px;
+
+    text-align: center;
+    margin-bottom: 2px;
+
+}
+
+#link {
+
+    width: 80%;
+    margin: auto;
+    background-color: #afafaf;
+    border-top: 2px solid black;
+}
+/* menu orizzontale */
+#link ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#link li {
+
+    flex: 1; /* tutti uguali */
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* link cliccabile */
+
+
+#link li a {
+
+    width: 100%;
+    height: 100%;
+
+    display: block;
+    text-decoration: none;
+
+    color: black;
+
+}
+/* hover effetto */
+
+#link li a:hover {
+
+    background-color: aliceblue;
+}
+
+.content {
+    grid-area: content;
+
+    display: flex;
+}
+#interno{
+    display: flex;
+    flex-direction: row;
+}
+
+aside {
+
+    position: sticky;
+    top: 0px;
+    width: 15%;
+
+    height: 100vh;
+    overflow-y: auto;
+    background-color: rgba(29, 240, 21, 0.432);
+
+
+}
+/* contenuto interno sidebar */
+#block {
+
+    padding: 10px;
+    background-color: rgba(255, 255, 255);
+
+}
+
+main {
+    width: 88%;
+    padding: 20px;
+    margin-right: 0;
+    margin-left: auto;
+    margin-top: 0;
+    background-color: aquamarine;
+}
+
+footer {
+
+    grid-area: footer;
+    background-color: #777;
+
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+/* parte inferiore footer */
+#footer-basso {
+    border: 10px solid black;
+    background-color: blue;
+}
+
